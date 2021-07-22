@@ -14,8 +14,6 @@
   - name: install git
     yum: name=git state=present
   - name: pull an image
-    docker_image:
-      name: ruchira1394/addressbook:image
-      source: pull
+    Command: docker pull ruchira1394/addressbook:image
   - name: create container
     command: docker run -itd -P ruchira1394/addressbook
