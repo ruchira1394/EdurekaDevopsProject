@@ -16,4 +16,4 @@
   - name: pull an image
     command: docker pull ruchira1394/addressbook:image
   - name: create container
-    command: docker run -itd -P ruchira1394/addressbook
+    command: docker run -itd --name myapp -P ruchira1394/addressbook:image
