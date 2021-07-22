@@ -17,7 +17,7 @@
     services:
       image: addressbook
       source: https://hub.docker.com/repository/docker/ruchira1394/addressbook 
-      dest=/tmp/mygitrepo5
+      dest: /tmp/mygitrepo5
   - name: build docker file
     command: chdir=/tmp/mygitrepo5 docker build -t myadd:ansible2 .
   - name: create container
