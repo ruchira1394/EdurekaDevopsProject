@@ -18,4 +18,4 @@
       Name: ruchira1394/addressbook:image
       source: pull
   - name: create container
-    command: docker run -itd -P myadd:ansible2
+    command: docker run -itd -P ruchira1394/addressbook
