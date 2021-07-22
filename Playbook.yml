@@ -14,6 +14,6 @@
   - name: pull an image
     command: docker pull ruchira1394/addressbook:image
   - name: delete container if myapp is present
-    command: docker rm myapp 
+    command: docker rm -f myapp 
   - name: create container
     command: docker run -itd --name myapp -P ruchira1394/addressbook:image
