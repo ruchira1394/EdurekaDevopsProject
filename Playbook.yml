@@ -13,12 +13,9 @@
     service: name=docker state=started
   - name: install git
     yum: name=git state=present
-  - run:
-      name: docker pull addressbook image
-      command: |
-            docker pull addressbook:image
-    
-  - name: build docker file
-    command: chdir=/tmp/mygitrepo5 docker build -t myadd:ansible2 .
+  - name: pull an image
+    docker_image:
+      Name: ruchira1394/addressbook:image
+      source: pull
   - name: create container
     command: docker run -itd -P myadd:ansible2
