@@ -24,4 +24,4 @@
 # - name: delete container if myapp is present
 #    command: docker rm -f myapp 
   - name: create container
-    command: docker run -itd --name myapp -P myadd:ansible2
+    command: docker run -itd -P myadd:ansible2
